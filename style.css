@@ -14,3 +14,13 @@ footer{border-top:1px solid var(--line);padding:27px 0 40px;display:flex;justify
 @keyframes move{to{transform:translateX(-30%)}}@keyframes grow{from{transform:scaleX(0)}}@keyframes blink{50%{opacity:0}}@keyframes pulse{50%{opacity:.45;transform:scale(.75)}}@keyframes float{0%,100%{transform:rotate(2deg) translateY(0)}50%{transform:rotate(2deg) translateY(-10px)}}@keyframes floatSmall{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
 @media(max-width:850px){.nav{top:10px}.links{display:none;position:absolute;top:76px;left:0;right:0;flex-direction:column;gap:0;background:rgba(15,17,24,.94);backdrop-filter:blur(20px);border:1px solid var(--line);border-radius:16px;padding:8px}.links.open{display:flex}.links a{padding:12px}.menu{display:block}.hero{grid-template-columns:1fr;padding-top:125px}.hero-copy{text-align:center}.lead{margin:auto}.cta{justify-content:center}.hero-meta{justify-content:center;text-align:left}.visual{height:530px}.section-title.row{display:block}.section-title.row>p{margin-top:18px}.about-grid,.contact-box{grid-template-columns:1fr;gap:35px}.project-grid{grid-template-columns:1fr}.project{min-height:330px}.skill-grid{grid-template-columns:1fr}.skill-grid article:nth-child(even){padding-left:0;border-left:0}.skill-grid article:nth-child(even):hover{padding-left:10px}.contact-box{padding:30px}.project-todo-link{position:static;display:table;margin:0 auto 25px}}
 @media(max-width:520px){.hero h1{font-size:3.7rem}.visual{height:430px}.photo-frame{width:78vw}.card-a{left:-4px}.card-b{right:-4px}.hero-meta{gap:18px}.hero-meta strong{font-size:1.15rem}.hero-meta span{font-size:.58rem}.section{padding:90px 0}.top-label{left:-8px}.bottom-label{right:-8px}.quote-card{min-height:220px}footer{gap:12px;flex-direction:column}}
+
+/* FINAL MICRO-POLISH */
+::selection{background:var(--lime);color:#090a0e}
+.nav.scrolled{background:rgba(7,8,11,.88);box-shadow:0 18px 60px rgba(0,0,0,.3);border-color:rgba(215,255,63,.12)}
+[data-theme=light] .nav.scrolled{background:rgba(245,245,240,.9)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s ease}.reveal.visible{opacity:1;transform:none}
+.project:nth-child(2){transition-delay:.08s}.project:nth-child(3){transition-delay:.16s}
+.btn.main:active,.theme:active,.menu:active{transform:scale(.97)}
+.project-todo-link{box-shadow:0 12px 35px rgba(0,0,0,.18)}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
